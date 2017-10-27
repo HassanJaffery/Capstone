@@ -1,0 +1,329 @@
+html {
+  font-size: 16px;
+  font-family: "Roboto", "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p, h5 {
+  color: #999999;
+}
+
+#learn, #main, #courses, #exhibition, footer {
+  position: relative;
+  top: 64px;
+}
+
+/* Header */
+header, .logo-header, .navigation {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid #000000;
+}
+
+.logo-header {
+  padding-left: 24px;
+  height: 32px;
+}
+
+.logo-header p {
+  font-weight: 700;
+  color: #000000;
+}
+
+.logo-header span {
+  font-weight: normal;
+  color: #c9c9c9;
+}
+
+.navigation {
+  padding-right: 24px;
+}
+
+.navigation li a {
+  padding: 16px;
+  color: #7f7f7f;
+  transition: all 250ms linear;
+}
+
+.navigation li a:hover {
+  color: #ffffff;
+  background-color: #1c86ee;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Banner section */
+#learn {
+  display: flex;
+  background-color: #c4c4c4;
+}
+
+#learn img {
+  width: 60%;
+  height: 100%;
+  padding: 32px 24px;
+}
+
+.start-here {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 32px;
+}
+
+.start-here h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.start-here h4 {
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.button {
+  font-size: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: #0000cd;
+  color: #ffffff;
+  transition: background-color 150ms ease-in 50ms;
+}
+
+.button:hover {
+  background-color: #6495ed;
+}
+
+.button:active {
+  background-color: #ffc1c1;
+}
+
+/* Practise section */
+#main {
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.info-main {
+  width: 60%;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.info-main img {
+  width: 95%;
+}
+
+.info-main h2 {
+  margin-bottom: 24px;
+}
+
+.info-main p {
+  font-style: italic;
+}
+
+.features {
+  width: 40%;
+  border-left: 1px solid #b3b3b3;
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  border-bottom: 1px solid #b3b3b3;
+  transition: background-color 150ms ease-out;
+}
+
+.orientation:hover, .campus:hover, .lecture:hover {
+  background-color: #dbdbdb;
+}
+
+.features .image-desktop {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.text {
+  width: 65%;
+}
+
+.text p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.text a {
+  color: #1e90ff;
+}
+
+.image-mobile {
+  display: none;
+}
+
+/* Start learning section */
+#courses h2, #exhibition h2 {
+  text-align: center;
+}
+
+#courses {
+  background-color: #e0e0e0;
+  padding-bottom: 32px;
+}
+
+.course-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 72px 32px 72px;
+}
+
+.course {
+  width: 300px;
+  height: 300px;
+  margin: 32px;
+}
+
+.course .image-course {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.course .course-info {
+  padding: 16px 0 24px 16px;
+  background-color: #ffffff;
+  transition: background-color 150ms ease-in;
+}
+
+.course .course-info:hover {
+  background-color: #f0fff0;
+}
+
+.course .course-info h5 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Exhibit section */
+#exhibition {
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+}
+
+.video {
+  width: 60%;
+  padding: 0 24px 32px 24px;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.video h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.video p {
+  font-style: italic;
+}
+
+.exhibit-features {
+  width: 40%;
+}
+
+.exhibit {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  padding: 16px;
+  transition: background-color 150ms ease-out;
+}
+
+.exhibit:hover {
+  background-color: #dbdbdb;
+}
+
+.exhibit .image-desktop {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.exhibit-info {
+  width: 65%;
+}
+
+.exhibit-info p {
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 8px 0 24px;
+  font-size: 12px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav ul li {
+  margin-right: 16px;
+}
+
+.footer-nav li a {
+  color: #cccccc;
+  transition: color 200ms linear;
+}
+
+.footer-nav li a:hover {
+  color: #6b6b6b;
+}
+
+/* Media query */
