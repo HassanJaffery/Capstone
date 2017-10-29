@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 a {
@@ -34,7 +34,7 @@ p, h5 {
 }
 
 /* Header */
-header, .logo-header, .navigation {
+header, .logo-header {
   display: flex;
   align-items: center;
   height: 64px;
@@ -64,7 +64,9 @@ header {
   color: #c9c9c9;
 }
 
-.navigation {
+.navigation ul {
+  display: flex;
+  align-items: center;
   padding-right: 24px;
 }
 
@@ -82,6 +84,7 @@ header {
 .mobile {
   display: none;
 }
+
 
 /* Banner section */
 #learn {
@@ -157,6 +160,8 @@ header {
 }
 
 .features {
+  display: flex;
+  flex-direction: column;
   width: 40%;
   border-left: 1px solid #b3b3b3;
 }
@@ -164,7 +169,6 @@ header {
 .orientation, .campus, .lecture {
   display: flex;
   align-items: center;
-  width: 100%;
   height: 30%;
   border-bottom: 1px solid #b3b3b3;
   transition: background-color 150ms ease-out;
@@ -175,13 +179,9 @@ header {
 }
 
 .features .image-desktop {
-  width: 35%;
+  width: 168px;
   height: auto;
   padding: 16px;
-}
-
-.text {
-  width: 65%;
 }
 
 .text p {
@@ -327,3 +327,97 @@ footer {
 }
 
 /* Media query */
+@media only screen and (max-width: 480px) {
+  h2 {
+    margin-bottom: 16px;
+  }
+  .logo-header, .navigation {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .mobile ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mobile a img:hover {
+    background-color: #1c86ee;
+  }
+  #learn {
+    flex-direction: column;
+  }
+  #learn img {
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .start-here {
+    padding: 32px 16px;
+    margin-right: 0;
+  }
+  .start-here h1 {
+    font-size: 42px;
+  }
+  .info-main, .image-desktop {
+    display: none;
+  }
+  .orientation, .campus, .lecture {
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    margin-left: 16px;
+    border-style: none;
+  }
+  .image-mobile {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 16px;
+  }
+  .text {
+    width: 100%;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  .image-course, .course-info h5, .course-info p {
+    display: none;
+  }
+  .course {
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+  }
+  .course  .course-info {
+    padding: 16px 0 24px 16px;
+    width: 380px;
+    background-color: #cccccc;
+    transition: background-color 150ms ease-in;
+  }
+  .course .course-info:hover {
+    background-color: #ededed;
+  }
+  .course-list {
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  .video h3, .video p, .exhibit-features {
+    display: none;
+  }
+  .video video {
+    padding: 0;
+    width: 390px;
+  }
+  .footer-nav {
+    display: none;
+  }
+  footer {
+    font-size: 16px;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
